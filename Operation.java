@@ -1,7 +1,6 @@
 package com.bridgelabz.stack.queue;
 
 public class Operation {
-
 	public StackAndQueue addElement() {
 		StackAndQueue stackList = new StackAndQueue();
 		stackList.push(70);
@@ -28,14 +27,19 @@ public class Operation {
 		System.out.println("After Pop:");
 		stackList.display();
 	}
-	
-	  public void queueElement() {
-	        StackAndQueue stackList =new StackAndQueue();
-	        stackList.queue(56);
-	        stackList.queue(30);
-	        stackList.queue(70);
-	        stackList.display();
-	        System.out.println("");
-	        stackList.peek();
-	    }
+
+	public void queueElement() {
+		StackAndQueue stackList = new StackAndQueue();
+		stackList.queue(56);
+		stackList.queue(30);
+		stackList.queue(70);
+		stackList.display();
+		System.out.println("");
+		stackList.peek();
+	}
+
+	public void dequeueElement() {
+		queueElement();
+		pop();
+	}
 }
