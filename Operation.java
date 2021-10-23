@@ -2,8 +2,8 @@ package com.bridgelabz.stack.queue;
 
 public class Operation {
 
-	public Stack addElement() {
-		Stack stackList = new Stack();
+	public StackAndQueue addElement() {
+		StackAndQueue stackList = new StackAndQueue();
 		stackList.push(70);
 		stackList.push(30);
 		stackList.push(56);
@@ -13,7 +13,7 @@ public class Operation {
 	}
 
 	public void peek() {
-		Stack stackList = new Stack();
+		StackAndQueue stackList = new StackAndQueue();
 		stackList.push(70);
 		stackList.push(30);
 		stackList.push(56);
@@ -22,10 +22,20 @@ public class Operation {
 
 	public void pop() {
 		System.out.println("Before Pop:");
-		Stack stackList = addElement();
+		StackAndQueue stackList = addElement();
 		stackList.pop();
 		System.out.println("");
 		System.out.println("After Pop:");
 		stackList.display();
 	}
+	
+	  public void queueElement() {
+	        StackAndQueue stackList =new StackAndQueue();
+	        stackList.queue(56);
+	        stackList.queue(30);
+	        stackList.queue(70);
+	        stackList.display();
+	        System.out.println("");
+	        stackList.peek();
+	    }
 }
